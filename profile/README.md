@@ -8,12 +8,15 @@
 
 See how often it agrees with human labels, in one command.
 
-An LLM-as-a-judge is an AI model that grades the answers of another AI model. **judgekeeper** compares the judge's verdicts with labels people gave, so you can decide whether to rely on it. It is free and open source, and it runs on your own computer.
+An LLM-as-a-judge is an AI model that grades the answers of another AI model. **judgekeeper** shows how often your judge agrees with your own Pass or Fail marks, so you can decide whether to rely on it. It is free and open source, and it runs on your own computer.
 
 ```
+cd your-project
 pip install judgekeeper
-judgekeeper demo
+judgekeeper start
 ```
+
+Run it in your project's own Python environment. It reads the results your eval tool already saved.
 
 - **Code:** [judgekeeper/judgekeeper](https://github.com/judgekeeper/judgekeeper)
 - **Website:** [www.judgekeeper.com](https://www.judgekeeper.com)

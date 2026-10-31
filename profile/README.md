@@ -8,12 +8,14 @@
 
 Find. Mark. Measure. Fix. Re-check.
 
-An LLM-as-a-judge is an AI model that grades the answers of another AI model. **judgekeeper** shows how often your LLM-as-a-judge agrees with your own Pass or Fail marks (TPR and TNR, each with its range), and helps you write a better rule. It is open source (MIT) and runs on your own computer.
+An LLM-as-a-judge is an AI model that grades the answers of another AI model. **judgekeeper** shows how often your LLM-as-a-judge agrees with your own Pass or Fail marks (TPR and TNR, each with its range), and helps you write a better rule. It is open source (Apache-2.0) and runs on your own computer.
 
+In your project folder, in its virtual environment:
 ```
-cd your-project
-uvx judgekeeper
+pip install judgekeeper
+judgekeeper
 ```
+Or, with no virtual environment: `uvx judgekeeper`.
 
 Works with promptfoo, DeepEval, Inspect AI, MLflow or your own file (such as a CSV, TSV or JSONL file).
 

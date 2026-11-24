@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/judgekeeper/judgekeeper">
-    <img src="banner.png" alt="judgekeeper: Check your LLM-as-a-judge in 5 steps. Find. Mark. Measure. Fix. Re-check." width="820">
+    <img src="banner.png" alt="judgekeeper: The keeper of human judgment for AI. Read. Measure. Fix. Re-check." width="820">
   </a>
 </p>
 
@@ -11,19 +11,18 @@
   <a href="https://pypi.org/project/judgekeeper/"><b>PyPI</b></a>
 </p>
 
-An LLM-as-a-judge is an AI model that grades another model's answers. **judgekeeper** shows how often your LLM-as-a-judge agrees with you, and where it goes wrong. It is open source (Apache-2.0) and runs on your own computer.
+Human judgment decides what's right. **judgekeeper** shows how often each automated check agrees with it, from an LLM-as-a-judge grading one answer to a reviewer checking each step of an agent, and whether agreement goes up or down after each change. It is open source (Apache-2.0) and runs locally.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/judgekeeper/judgekeeper/main/docs/assets/demo.webp" alt="judgekeeper finds the results, opens the marking page, and shows how often the LLM-as-a-judge agrees with you." width="760">
 </p>
 
-### The 5 steps
+### The 4 steps
 
-1. **Find.** Find your eval results and the LLM-as-a-judge that graded them.
-2. **Mark.** Mark your answers Pass or Fail in your browser.
-3. **Measure.** See how often your LLM-as-a-judge agrees with you.
-4. **Fix.** Write a better rule and test it on marks kept aside.
-5. **Re-check.** Change your LLM-as-a-judge and see if it still agrees with you.
+1. **Read.** Read your eval results and your labels, such as a Label Studio export, or mark answers Pass or Fail in your browser.
+2. **Measure.** See how often your check agrees with you, and how much your people agree with each other.
+3. **Fix.** Write a better rule and test it on marks kept aside.
+4. **Re-check.** Change your check's prompt or model and see if agreement goes up or down.
 
 ### Install
 
@@ -34,4 +33,4 @@ judgekeeper
 ```
 Or, with no virtual environment: `uvx judgekeeper`.
 
-Works with promptfoo, DeepEval, Inspect AI, MLflow or your own CSV, TSV or JSONL file.
+Works with promptfoo, DeepEval, Inspect AI, MLflow, Label Studio exports or your own CSV, TSV or JSONL file. For agents, `judgekeeper steps` checks a reviewer's first wrong step.
